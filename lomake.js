@@ -28,3 +28,17 @@ if(intVastaus==-1)
   alert("Et vastannut!"),
   return false;
 }
+var Teksti = form.Teksti.value;
+
+if(Teksti.length<10)
+{
+  alert("");
+  form.Teksti.focus();
+  return false;
+}
+if(Teksti.length>1000)
+{
+  alert("");
+  form.Teksti.focus(),
+  return false;
+}
