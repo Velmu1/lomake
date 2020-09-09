@@ -14,20 +14,18 @@ function salasana() {
     x.type = "password";
   }
 }
-var intVastaus=-1;
+function vastaus()
+{
+  var x = document.getElementById("myRadio");
+  x.checked = true;
+}
+function check()
+{
+  var x = document.getElementById("myCheck");
+  x.checked = true;
+}
 
-for (var i=0; i< form.Vastaus.length;i++)
-{
-  if (form.Vastaus[i].checked==true)
-  {
-  intVastaus=i;
-  }
-}
-if(intVastaus==-1)
-{
-  alert("Et vastannut!"),
-  return false;
-}
+
 var Teksti = form.Teksti.value;
 
 if(Teksti.length<10)
