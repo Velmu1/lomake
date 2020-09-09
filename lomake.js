@@ -19,7 +19,7 @@ if(Etunimi.length<2)
 }
 
 {
-  var x = document.getElementByName("vastaus");//radio
+  var x = document.getElementByName("vastaus").value;//radio
   x.checked = true;
 }
 
