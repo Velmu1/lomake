@@ -17,23 +17,9 @@ if(Etunimi.length<2)
     x.type = "password";
   }
 }
-
-
-  var intVastaus=-1;
-
-  for (var i=0; i< form.Vastaus.length;i++)
 {
-    if (form.Vastaus[i].checked==true)
-  {
-  intVastaus=i;
-  }
-}
-  if(intVastaus==-1)
-  {
-    alert("Et vastannut!");
-    return false;
-  }
-  
+var pallukat = document.getElementByName('vastaukset').value;
+if (pallukat = '')
 
 
 var Teksti = form.Teksti.value;
@@ -41,12 +27,12 @@ var Teksti = form.Teksti.value;
 if(Teksti.length<10)
 {
   alert("");
-  form.Teksti.focus();
+
   return false;
 }
 if(Teksti.length>1000)
 {
   alert("");
-  form.Teksti.focus(),
+  
   return false;
 }
