@@ -15,7 +15,7 @@ function salasana() {
   }
 }
 function vastaus()
-{
+{ 
   var x = document.getElementById("myRadio");
   x.checked = true;
 }
