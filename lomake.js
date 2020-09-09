@@ -1,4 +1,4 @@
-function etunimi()
+function etunimi() 
 {
 var Etunimi = form.Etunimi.value;
 
