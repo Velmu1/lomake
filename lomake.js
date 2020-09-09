@@ -18,11 +18,21 @@ if(Etunimi.length<2)
   }
 }
 
-{
-  var x = document.getElementByName("vastaus").value;//radio
-  x.checked = true;
-}
 
+  var intVastaus=-1;
+
+  for (var i=0; i< form.Vastaus.length;i++)
+{
+    if (form.Vastaus[i].checked==true)
+  {
+  intVastaus=i;
+  }
+}
+  if(intVastaus==-1)
+  {
+    alert("Et vastannut!");
+    return false;
+  }
 {
   var x = document.getElementByName("check");//checkbox
   x.checked = true;
