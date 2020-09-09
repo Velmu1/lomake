@@ -10,8 +10,6 @@
 <hr style="width:50%">
 
 
-<form action="/admin/process-form.php" method="POST">
-
 <p>
   <label> Nimi:</label>
   <br>
@@ -21,9 +19,6 @@
   <label>Salasana:</label>
   <br>
   <input type="text" name="ika">
-</p>
-<p>
-  <input type="submit" value="Laheta">
 </p>
 </form>
 
@@ -40,7 +35,25 @@
 
       <input type="checkbox" name="" value=""> Aivan mahtava!
       <br>
+      <input type="checkbox" name="" value=""> Ammattimaisesti tehty!
+      <br>
+      <input type="checkbox" name="" value=""> Ostan sinulta!
+
+<p> Mikä on lempiaineesi Keudassa?<p>
+  <select name="mika_attribuutti">
+    <option value="">Ammattiaineet</option>
+    <option value="">???</option>
+    <option value="">???</option>
+    <option value="" selected>???</option>
+</select>
 
 
+<p> Kerro miten kehittäisit sivujani?</p>
+
+<textarea id="" name="" rows="4" cols="50">
+  Kirjoita tähän...
+</textarea>
+<br><br>
+<input type="submit" value="lähetä">
   </body>
 </html>
