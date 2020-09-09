@@ -33,7 +33,7 @@ if(Etunimi.length<2)
     alert("Et vastannut!");
     return false;
   }
-  
+
 
 
 var Teksti = form.Teksti.value;
