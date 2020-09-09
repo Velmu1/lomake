@@ -19,12 +19,12 @@ if(Etunimi.length<2)
 }
 
 {
-  var x = document.getElementByName("vastaus");
+  var x = document.getElementByName("vastaus");//radio
   x.checked = true;
 }
 
 {
-  var x = document.getElementByName("check");
+  var x = document.getElementByName("check");//checkbox
   x.checked = true;
 }
 
