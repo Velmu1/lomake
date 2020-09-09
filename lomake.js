@@ -33,10 +33,7 @@ if(Etunimi.length<2)
     alert("Et vastannut!");
     return false;
   }
-{
-  var x = document.getElementByName("check");//checkbox
-  x.checked = true;
-}
+
 
 
 var Teksti = form.Teksti.value;
