@@ -1,4 +1,4 @@
-function etunimi() 
+function etunimi() s
 {
 var Etunimi = form.Etunimi.value;
 
@@ -10,7 +10,7 @@ if(Etunimi.length<2)
 }
 }
 function salasana() {
-  var x = document.getElementById("myInput");
+  var x = document.getElementByName("salasana").value;
   if (x.type === "password") {
     x.type = "text";
   } else {
@@ -19,12 +19,12 @@ function salasana() {
 }
 function vastaus()
 {
-  var x = document.getElementById("myRadio");
+  var x = document.getElementByName("myRadio");
   x.checked = true;
 }
 function check()
 {
-  var x = document.getElementById("myCheck");
+  var x = document.getElementByName("myCheck");
   x.checked = true;
 }
 
