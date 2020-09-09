@@ -1,4 +1,4 @@
-function etunimi() 
+function etunimi()
 {
 var Etunimi = form.Etunimi.value;
 
@@ -10,7 +10,7 @@ if(Etunimi.length<2)
 }
 }
 function salasana() {
-  var x = document.getElementById("myInput");
+  var x = document.getElementById("Salasana");
   if (x.type === "password") {
     x.type = "text";
   } else {
