@@ -6,11 +6,25 @@ if(Etunimi.length<2)
   form.Etunimi.focus();
   return false;
 }
-var Sukunimi = form.Sukunimi.value;
+function salasana() {
+  var x = document.getElementById("myInput");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+var intVastaus=-1;
 
-if(Sukunimi.length<2)
+for (var i=0; i< form.Vastaus.length;i++)
 {
-  alert("Anna sukunimi!");
-  form.Sukunimi.focus();
+  if (form.Vastaus[i].checked==true)
+  {
+  intVastaus=i;
+  }
+}
+if(intVastaus==-1)
+{
+  alert("Et vastannut!"),
   return false;
 }
