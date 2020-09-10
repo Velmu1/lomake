@@ -31,6 +31,7 @@ for (var 1 = 0; i < pallukat.length; i++)
   {
     alert("")
   }
+<<<<<<< HEAD
 {
   var laatikko = document.getElementByName('laatikko');//checkbox
   var vastaus = 0;
@@ -45,6 +46,10 @@ for (var 1 = 0; i < pallukat.length; i++)
     {
       alert("")
     }
+=======
+
+
+>>>>>>> 9c4a66899ff06ecc83b195cd27e94fef5a6ff56b
 
 var Teksti = form.Teksti.value;
 
