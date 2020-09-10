@@ -17,36 +17,36 @@ if(Etunimi.length<2)
     x.type = "password";
   }
 }
+var intPallukka=-1;//radio
 
-
-  var intVastaus=-1;
-
-  for (var i=0; i< form.Vastaus.length;i++)
-{
-    if (form.Vastaus[i].checked==true)
+for (var i=0; i < form.Pallukka.length;i++)
   {
-  intVastaus=i;
+    if (form.Pallukka[i].checked==true)
+  {
+    intPallukka=i;
   }
 }
-  if(intVastaus==-1)
+var intLaatikko=-1;//checkbox
+
+for (var i=0; i < form.Laatikko.length;i++)
   {
-    alert("Et vastannut!");
-    return false;
+    if (form.Laatikko[i].checked==true)
+  {
+    intLaatikko=i;
   }
-
-
+}
 
 var Teksti = form.Teksti.value;
 
 if(Teksti.length<10)
 {
   alert("");
-  form.Teksti.focus();
+
   return false;
 }
 if(Teksti.length>1000)
 {
   alert("");
-  form.Teksti.focus(),
+
   return false;
 }
