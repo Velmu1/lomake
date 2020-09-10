@@ -32,7 +32,7 @@ for (var 1 = 0; i < pallukat.length; i++)
     alert("")
   }
 {
-  var laatikko = document.getElementByName('vastaukset');//checkbox
+  var laatikko = document.getElementByName('laatikko');//checkbox
   var vastaus = 0;
   for (var 1 = 0; i < laatikko.length; i++)
     {
