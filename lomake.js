@@ -1,6 +1,6 @@
 function lomake()
 {
-var Etunimi = form.Etunimi.value;
+var Etunimi = form.Etunimi.value;//etunimi
 
 if(Etunimi.length<2)
 {
@@ -10,10 +10,10 @@ if(Etunimi.length<2)
 }
 }
  {
-  var x = document.getElementByName("salasana").value;
-  if (x.type === "password") {
+  var x = document.getElementByName("salasana").value;//salasana
+  if (x.type === "password"){
     x.type = "text";
-  } else {
+    } else {
     x.type = "password";
   }
 }
@@ -36,16 +36,16 @@ for (var i=0; i < form.Laatikko.length;i++)
   }
 }
 
-var Teksti = form.Teksti.value;
+var Teksti = form.Teksti.value;//teksti laatikko
 
 if(Teksti.length<10)
 {
   alert("");
 
   return false;
-}
-if(Teksti.length>1000)
-{
+  }
+    if(Teksti.length>1000)
+  {
   alert("");
 
   return false;
