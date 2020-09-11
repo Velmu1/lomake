@@ -1,5 +1,6 @@
 function tarkasta(form)
 {
+<<<<<<< HEAD
   var etunimi = form.enimi.value;
   var salis = form.salasana.value;
   var palaute = form.Tboksi.value;
@@ -11,6 +12,23 @@ function tarkasta(form)
     alert("Anna vähintään 3-merkkinen etunimi");
     form.enimi.focus();
     return false;
+=======
+var Etunimi = form.Etunimi.value;//etunimi
+
+if(Etunimi.length<2)
+{
+  alert("Anna etunimi!");
+  form.Etunimi.focus();
+  return false;
+}
+}
+ {
+  var x = document.getElementByName("salasana").value;//salasana
+  if (x.type === "password"){
+    x.type = "text";
+    } else {
+    x.type = "password";
+>>>>>>> 4dd741ca97445313dcc3ec1cf5fde3f532023cc9
   }
   if(sukunimi.length < 5)
    {
@@ -52,6 +70,7 @@ function tarkasta(form)
     alert("Et valinnut, mitä mieltä olet sivustani");
     return false;
   }
+<<<<<<< HEAD
   else {
     alert("Kiitos lomakkeen täytöstä");
 
@@ -64,4 +83,21 @@ function tyhjenna(lomake)
   {
     return false;
   }
+=======
+}
+
+var Teksti = form.Teksti.value;//teksti laatikko
+
+if(Teksti.length<10)
+{
+  alert("");
+
+  return false;
+  }
+    if(Teksti.length>1000)
+  {
+  alert("");
+
+  return false;
+>>>>>>> 4dd741ca97445313dcc3ec1cf5fde3f532023cc9
 }
