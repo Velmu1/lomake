@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="lomake2.css">
+    <title></title>
+    <script type="text/javascript" src="lomake2.html"></script>
+  </head>
+  <body>
+    <form class="" action="lomake2.html" method="post" onsubmit="return tarkasta(this)">
+      <div class="salanimi">
+      <h1> Kirjautumislomake </h1>
+      <label> Nimi: </label><br>
+        <input type="text" name="" class="inp" placeholder="Kirjoita nimesi"><br><br>
+      <label> Sähköposti: </label><br>
+        <input type="text" name="" class="inp" placeholder="Kirjoita sähköpostiosoitteesi"><br><br>
+      <label> Ikä: </label><br>
+        <input type="text" name="" class="" placeholder="Kirjoita ikäsi"><br><br>
+      <label> Mihin ryhmään kuulut? </label><br><br>
+          <select class="ryhmä" name="ryhmä">
+            <option value="opiskelija">Opiskelija</option>
+            <option value="työssä">Työssä</option>
+            <option value="työtön">Työtön</option>
+            <option value="eläkeläinen">Eläkeläinen</option>
+          </select><br><br>
+      <label> Suositteletko Keudaa ystävillesi </label><br>
+        <input type="radio" name="pallo" value="yksi"> En <br><br>
+        <input type="radio" name="pallo" value="kaksi"> En <br><br>
+        <input type="radio" name="pallo" value="kolme"> En <br><br>
+      <label> Parasta Keudassa on: </label><br>
+        <input type="checkbox" name="laatikko" value="neljä"> Ammatilliset <br><br>
+        <input type="checkbox" name="laatikko" value="viisi"> YTO-aineeti <br><br>
+        <input type="checkbox" name="laatikko" value="kuusi"> Ruokailu <br><br>
+      <label> Mikä on lempiaineesi Keudassa </label><br>
+          <select class="aine" name="aine">
+            <option value=""selected> Valitse tästä</option>
+            <option value="">???</option>
+            <option value="">???</option>
+            <option value="">???</option>
+          </select><br><br>
+      <label> Kerro, miten kehittäisit opetusta Keudassa </label><br><br>
+        <textarea name="palaute" rows="4" cols="50"></textarea>
+      <p>
+        <input type="submit" name="submit" value="Tarkasta lomake">
+      <p>
+    </form>
+    </div>
+  </body>
+</html>
