@@ -7,99 +7,46 @@
     <script type="text/javascript" src="lomake.js"></script>
   </head>
   <body>
-
-
-
 <form class="" action="lomake.html" method="post" onsubmit="return tarkasta(this)" onreset="return tyhjenna(this)">
 <div class="nimisala">
-
-
-
-
 <h1> Kirjautumislomake </h1>
 <hr style="width:50%">
-
-
-
-
   <td> Nimi:</td>
   <td class="oikea"><input type="text" name="enimi" value=""></td>
 </tr>
 <tr>
   <td>Salasana:</td>
-<td class="oikea"><input type="text" name="salasana" value=""></td>
+<td class="oikea"><input type="password" name="salasana" value=""></td>
 </tr>
-
-
-
-
-
-<p> Tätä tietoa ei näytetä käyttäjälle Millainen koneen käyttäjä olet? </p>
-
-
-   <input type="radio" name="Vastaus" value="eka"> Himopelaaja
+<p> Millainen koneen käyttäjä olet? </p>
+   <input type="radio" name="pallo" value="eka"> Himopelaaja
       <br>
-      <input type="radio" name="Vastaus" value="toka"> Käytänopiskeluun
+      <input type="radio" name="pallo" value="toka"> Käytänopiskeluun
       <br>
-      <input type="radio" name="Vastaus" value="kolmas"> En käytä konetta
-
-   <input type="radio" name="Pallukka" value="eka"> Himopelaaja
+      <input type="radio" name="pallo" value="kolmas"> En käytä konetta
       <br>
-      <input type="radio" name="Pallukka" value="toka"> Käytänopiskeluun
-      <br>
-      <input type="radio" name="Pallukka" value="kolmas"> En käytä konetta
-
-      <br>
-
       <p> Mitä mieltä olet sivustani tähän asti? </p>
-
-
-
-      <input type="checkbox" name="Mahtava" value="aivan"> Aivan mahtava!
+      <input type="checkbox" name="mahtava" value="aivan"> Aivan mahtava!
       <br>
-      <input type="checkbox" name="Mahtava" value="Ammattimaisesti"> Ammattimaisesti tehty!
+      <input type="checkbox" name="mahtava" value="Ammattimaisesti"> Ammattimaisesti tehty!
       <br>
-      <input type="checkbox" name="Mahtava" value="ostan"> Ostan sinulta!
-
-      <input type="checkbox" name="Laatikko" value="aivan"> Aivan mahtava!
+      <input type="checkbox" name="mahtava" value="ostan"> Ostan sinulta!
       <br>
-      <input type="checkbox" name="Laatikko" value="Ammattimaisesti"> Ammattimaisesti tehty!
-      <br>
-      <input type="checkbox" name="Laatikko" value="ostan"> Ostan sinulta!
-
-
 <p> Mikä on lempiaineesi Keudassa?<p>
-
   <select name="mika_attribuutti">
-    <option value="">Ammattiaineet</option>
     <option value="">???</option>
     <option value="">???</option>
     <option value=""selected>???</option>
 </select>
-
-
 <p> Kerro miten kehittäisit sivujani?</p>
-
-<textarea  name="Tboksi" rows="4" cols="50">
-  Kirjoita tähän...
-</textarea>
+<textarea  name="Tboksi" rows="4" cols="50"></textarea>
 <br>
-
 <p>
     <input type="submit" name="submit" value="Tarkasta lomake">
     <input type="reset" name="reset" value="Tyhjennä lomake">
   </p>
 
 </form>
-=======
-<textarea id="Tboksi" name="Teksti" rows="4" cols="50">
-
-</textarea>
-<br><br>
-
-<button type= "button" onclick= "lomake()">Lähetä</button>
-
-
 </div>
   </body>
 </html>
